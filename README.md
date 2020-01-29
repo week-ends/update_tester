@@ -1,7 +1,5 @@
 # update_tester
 
-==========
-
 ## Used Webframework
 
 - [Flask](https://github.com/pallets/flask)
@@ -13,7 +11,7 @@
 
 ## How to Test
 
-==========
+
 
 1. server 디렉토리로 이동 후 server.py 구동
 
@@ -41,7 +39,7 @@ $ python app.py
 
 ## Specification
 
-==========
+
 
 ### File Description
 
