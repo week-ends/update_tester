@@ -6,7 +6,6 @@ __version__ = '1.0'
 import os
 import requests
 import zipfile
-from urllib.request import urlopen
 import tkinter as tk
 from tkinter import *
 from tkinter import messagebox
@@ -51,7 +50,8 @@ def aboutme():
 
 
 def newVersion():
-    data = urlopen('http://127.0.0.1:5000/version').read()
+    data = requests.get('http://127.0.0.1:5000/version',
+                        allow_redirects=True).content
     return float(data)
 
 
@@ -66,7 +66,8 @@ def restart_program():
 try:
     # data = urllib2.urlopen(
     #     'http://192.168.116.128:81/py_autoupdate/version').read()
-    data = urlopen('http://127.0.0.1:5000/version').read()
+    data = requests.get('http://127.0.0.1:5000/version',
+                        allow_redirects=True).content
     print(data)
     if float(data) > float(__version__):
         messagebox.showinfo('Software Update', 'Update Available!')
