@@ -17,7 +17,6 @@ window = Tk()
 window.title(_AppName_)
 window.geometry("400x400")
 window.resizable(False, False)
-window.wm_iconbitmap('img/logo.png')
 
 # 배경화면
 wall = PhotoImage(file="img/logo.png")
@@ -40,7 +39,6 @@ def aboutme():
     window2.geometry("300x300")
     window2.resizable(0, 0)
     window2.title("About")
-    window2.wm_iconbitmap('img/logo.png')
 
     image = PhotoImage(file='img/logo.png')
 
