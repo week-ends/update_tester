@@ -30,20 +30,11 @@ def close():
 
 
 def aboutme():
-    window2 = Tk()
+    toplevel = Toplevel()
+    toplevel.title('About Me')
+    toplevel.geometry("250x100")
 
-    window2.transient()
-    window2.result = None
-    window2.grab_set()
-
-    window2.geometry("300x300")
-    window2.resizable(0, 0)
-    window2.title("About")
-
-    image = PhotoImage(file='img/logo.png')
-
-    label = Label(window2, image=image)
-    label.place(x=1, y=1)
+    label = Label(toplevel, text='The Current Version is\n'+__version__)
     label.pack()
 
 
