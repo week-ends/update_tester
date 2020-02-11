@@ -24,6 +24,10 @@ steps:
     inputs:
       versionSpec: "$(python.version)"
     displayName: "Use Python $(python.version)"
+    - task: CopyFiles@2
+  inputs:
+    targetFolder: '$(Build.ArtifactStagingDirectory)'    
+- task: PublishBuildArtifacts@1
 
   - script: |
       python -m pip install --upgrade pip
