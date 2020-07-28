@@ -7,7 +7,7 @@
 
 - 실행시 url에서 버전을 확인한다.
 - This software check the version in the url at the time of execution.
-<br/>
+
 - 낮은 버전으로 확인될 경우 로고를 업데이트한다.
 - Logo(app/img/logo.png) of the software if confirmed with a lower version.
 
