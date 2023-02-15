@@ -49,5 +49,5 @@ typing-extensions==3.7.4.1
 update==0.0.1
 urllib3>=1.25.8
 varint==1.0.2
-Werkzeug==0.16.0
+Werkzeug==2.2.3
 wrapt==1.11.2
